@@ -1,0 +1,5 @@
+num1,operation,num2,expected
+One,add,Two,3
+Two,subtract,Two,0
+One,multiply,Two,2
+Six,divide,Two,3
