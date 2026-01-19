@@ -1,0 +1,21 @@
+{
+  "InstanceID": "DS-WIN10",
+  "AssayModuleVersion": "2.0.130.0",
+  "BatchId": "2025_01_08_03_17_0000",
+  "Operator": "Reshma",  
+  "Workflow": "Test Project",  
+  "Step": "Step1",
+  "EndStatus": "Cancelled",
+  "RunStart": "2025-10-23T22:36:06.7981282-07:00",
+  "RunEnd": "2025-10-23T22:43:39.3582238-07:00",  
+  "Notes": [
+    "Selected step1",
+    "Conditions are all met to run",
+    "Process started",
+    "No contamination",
+    "All ingredients are present at level max",
+    "User pressed start run",
+    "mixer running ",
+   "Process run successfully, aborted by mixer"
+  ]  
+}
