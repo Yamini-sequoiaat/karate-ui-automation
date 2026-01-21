@@ -1,0 +1,36 @@
+<configuration>
+  <!--  Application Settings  -->
+  <appSettings>
+    <add key="ApplicationName" value="SampleApp" />
+    <add key="Version" value="1.0.0" />
+    <add key="WaitTimeForPreparation" value="4000" />
+    <add key="SimulationMode" value="false" />
+    <add key="StopAppOnExit" value="false" />
+  </appSettings>
+  <!--  Database Connection Details  -->
+  <database>
+    <server>localhost</server>
+    <port>3306</port>
+    <dbName>app_db</dbName>
+    <user>admin</user>
+    <!--  Passwords can be stored here, but should be secured in production environments  -->
+    <password>securepassword123</password>
+  </database>
+  <!--  Feature Toggles  -->
+  <features>
+    <!--  "enabled" attribute with boolean value  -->
+    <feature name="betaFeature" enabled="true" />
+    <feature name="logging" enabled="false" />
+  </features>
+  <!--  List of items (e.g., users)  -->
+  <users>
+    <user id="1">
+      <username>john_doe</username>
+      <role>user</role>
+    </user>
+    <user id="2">
+      <username>jane_smith</username>
+      <role>admin</role>
+    </user>
+  </users>
+</configuration>
