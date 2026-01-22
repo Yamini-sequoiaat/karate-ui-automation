@@ -4,8 +4,8 @@ Scenario: False positive due to ignored assertion result in JavaScript function
   * def invalidCheck =
   """
     function(actual, expected) {
-        karate.match(actual, expected);
-        return true;
+        var resultFalsePositive = karate.match(actual, expected);
+        return resultFalsePositive;
   }
   """
 
