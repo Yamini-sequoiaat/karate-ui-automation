@@ -2,6 +2,9 @@ Feature: Validate the date format from log file
 
 Scenario: Check ISO date format in log-dummy.txt
 
+    * def data = read('../inputs/log-dummy.txt')
+    * def jsonData = karate.fromString(data)
+
     * def runStart = jsonData.RunStart
     * def runEnd = jsonData.RunEnd
 
