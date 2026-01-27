@@ -1,10 +1,9 @@
 Feature: Parse and Consolidate XML Book Data (Action)
 
   Background:
-    * def baseUrl = 'https://sample-files.com/downloads/data/xml/complex-nested.xml'
+    * url baseUrl
 
   Scenario:
-    * url baseUrl
     * method get
     * status 200
 
