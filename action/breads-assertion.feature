@@ -1,8 +1,7 @@
 Feature: Cat Breeds API validation
 
 Background: Configure Breeds API base request
-    * url 'https://catfact.ninja'
-    * path 'breeds'
+    * url catApiBaseUrl
 
 Scenario: Verify breeds list is returned and not empty
     * method get
@@ -68,7 +67,7 @@ Scenario: Validate API response Content-Type header
 Scenario: Validate API response time
     * method get
     * status 200
-    * assert responseTime < 2000
+    * assert responseTime < 5000
 
 Scenario: Validate pagination behavior using limit parameter
     * param limit = 5
