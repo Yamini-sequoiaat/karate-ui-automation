@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload Demo</title>
+</head>
+<body>
+
+  <h2>Upload File</h2>
+
+  <input type="file" id="fileInput" />
+  <br><br>
+
+  <button id="uploadBtn" onclick="showFileName()">Upload</button> 
+
+  <p id="uploadedFileName" style="color: red; font-weight: bold;"></p>
+
+  <script>
+    function showFileName() {
+      var input = document.getElementById('fileInput');
+      if (input.files.length > 0) {
+        document.getElementById('uploadedFileName').innerText =
+          'Uploaded File: ' + input.files[0].name;
+      }
+    }
+  </script>
+
+</body>
+</html>
