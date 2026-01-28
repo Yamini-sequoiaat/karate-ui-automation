@@ -16,12 +16,5 @@ function fn() {
   // Common thresholds
   config.maxResponseTime = 2000;
 
-  config.driver = {
-    type: 'playwright',
-    browser: 'chromium',
-    headless: false,
-    playwrightExecutable: 'playwright'
-  };
-
   return config;
 }
