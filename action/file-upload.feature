@@ -7,6 +7,8 @@ Scenario: User uploads a file using custom HTML page
     * driver 'file:' + html
     * waitFor('#fileInput').input(Key.ENTER).click()
     * delay(2000)
+
+    # Handle OS file dialog
     * robot { window: 'Open', fork: false }
     * robot.input(Key.ALT + 'd')
     * delay(500)
@@ -19,8 +21,11 @@ Scenario: User uploads a file using custom HTML page
     * robot.input(Key.ENTER)
     * delay(2000)
     * screenshot('after-file-selected')
+    
     * waitFor('#uploadBtn').input(Key.ENTER).click()
     * screenshot('after-upload-clicked')
+
+    # Validate uploaded file name
     * waitFor('#uploadedFileName')
     * def uploadedText = text('#uploadedFileName')
     * print 'Uploaded file text is:', uploadedText
