@@ -7,6 +7,8 @@ function fn() {
   config.baseUrl = 'https://sample-files.com/downloads/data/xml/complex-nested.xml';
   // URL for file upload testing
   config.uploadUrl = 'https://practice-automation.com/file-upload/';
+  // Petstore API URL
+  config.petUrl = 'https://petstore.swagger.io/v2/pet';
   
   // Common headers
   config.commonHeaders = {
