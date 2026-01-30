@@ -3,10 +3,12 @@ function fn() {
 
   // Base URL for API requests
   config.catApiBaseUrl = 'https://catfact.ninja/breeds';
-  // Base URL for xml file download
+  //  Base URL for xml file download
   config.baseUrl = 'https://sample-files.com/downloads/data/xml/complex-nested.xml';
-  // Base URL for file upload UI and API testing
-  //config.uploadUiUrl = 'http://localhost:5500/inputs/upload.html';
+  // URL for file upload testing
+  config.uploadUrl = 'https://practice-automation.com/file-upload/';
+  // Petstore API URL
+  config.petUrl = 'https://petstore.swagger.io/v2/pet';
   
   // Common headers
   config.commonHeaders = {
