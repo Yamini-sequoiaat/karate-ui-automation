@@ -8,7 +8,7 @@ function fn() {
   // URL for file upload testing
   config.uploadUrl = 'https://practice-automation.com/file-upload/';
   // Petstore API URL
-  config.petUrl = 'https://petstore.swagger.io/v2/pet';
+  config.petUrl = 'https://petstore.swagger.io';
   
   // Common headers
   config.commonHeaders = {
